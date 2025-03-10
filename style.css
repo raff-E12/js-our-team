@@ -48,6 +48,10 @@ a, small{
     margin: 0;
 }
 
+img{
+    width: 200px;
+}
+
 /* Stile Generale di Pagina */
 
 body{
@@ -72,4 +76,61 @@ body{
     text-transform: capitalize;
     font-weight: 900;
     color: #D9306E;
+}
+
+.card-emplo-parent{
+    border: 2px solid red;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    gap: 10px;
+}
+
+.img-card{
+    width: 150px;
+    overflow: hidden;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    overflow: hidden;
+    background-color: #0D0D0D;
+}
+
+.text-cards{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: left;
+    justify-content: flex-start;
+    padding: 20px;
+    gap: 10px;
+}
+
+.text-cards a h5{
+   margin: 0;
+   font-weight: 700;
+}
+
+.text-cards h3{
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #F2E8DC;
+    margin: 0;
+}
+
+.text-cards p{
+    text-align: left;
+    text-transform: capitalize;
+    font-weight: 200;
+    color: #F2E8DC;
+    margin: 0;
 }
