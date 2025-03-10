@@ -1,0 +1,75 @@
+/* Scala Tipografica di Pagina */
+
+h1{
+    font-size: 2.986rem;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+}
+
+h2{
+    font-size: 2.488rem;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+}
+
+h3{
+    font-size: 2.074rem;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+}
+
+h4{
+    font-size: 1.728rem;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+}
+
+h5{
+    font-size: 1.44rem;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+}
+
+h6{
+    font-size: 1.2rem;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+}
+
+p{
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+}
+
+a, small{
+    font-size: 0.833rem;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+}
+
+/* Stile Generale di Pagina */
+
+body{
+    background-color: #F2E8DC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.title-box{
+    padding: 32px;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    font-weight: 520;
+}
+
+.title-box h4{
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 900;
+    color: #D9306E;
+}
