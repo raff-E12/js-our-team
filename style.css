@@ -79,7 +79,6 @@ body{
 }
 
 .card-emplo-parent{
-    border: 2px solid red;
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 10px;
