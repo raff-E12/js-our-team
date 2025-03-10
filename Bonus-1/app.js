@@ -45,6 +45,7 @@ let list_Teams_members = [
 
   function HandleCardGenFun(){
     let parent_node_card = document.getElementById("box-card-parent");
+    parent_node_card.innerHTML = "";
     let parent_fragment = document.createDocumentFragment();
     for (let index = 0; index < list_Teams_members.length; index++) {
         const cards = document.createElement('div');
@@ -88,6 +89,38 @@ let list_Teams_members = [
         return container_text;
   }
 
+  const submit_event = document.getElementById("Btn-sub");
+  submit_event.addEventListener("click", (e)=>{
+    let value_name = document.getElementById("inputName");
+    let value_email = document.getElementById("inputEmail");
+    let value_role = document.getElementById("inputRole");
+    let value_img = document.getElementById("inputImg");
+    let object_new = {
+      name: "",
+      role: "",
+      email: "",
+      img: ""
+    }
+
+    if (value_email.value !== "" && value_img.value !== "" && value_email.value !== "" && value_role.value !== "") {
+      object_new.name = value_name.value;
+      object_new.role = value_role.value;
+      object_new.email = value_email.value;
+      object_new.img = value_img.value;
+
+      list_Teams_members.push(object_new);
+      HandleCardGenFun();
+    } else {
+      window.alert("Inserisci i valori corrispondenti nei campi di input.");
+    }
+
+    e.preventDefault();
+    console.log(object_new)
+  })
+
   //Loading dell'evento in finestra
 
-window.addEventListener("load", HandleCardGenFun);
+window.addEventListener("load",()=>{
+  window.alert("Benvenuto nella pagina, aggiungi al tuo team chi vuoi far parte per il tuo viaggio.");
+  HandleCardGenFun();
+});
